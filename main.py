@@ -49,13 +49,6 @@ def poisson_rec():
     pcd.orient_normals_consistent_tangent_plane(360)
     o3d.visualization.draw_geometries([pcd], point_show_normal=True)
     
-    # o3d.visualization.draw_geometries([pcd],
-    #                                 zoom=0.664,
-    #                                 front=[-0.4761, -0.4698, -0.7434],
-    #                                 lookat=[1.8900, 3.2596, 0.9284],
-    #                                 up=[0.2304, -0.8825, 0.4101])
-    
-    
     print('run Poisson surface reconstruction')
     with o3d.utility.VerbosityContextManager(
             o3d.utility.VerbosityLevel.Debug) as cm:
